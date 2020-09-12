@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="Style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="div_logo">
+            <img src="Image/logo.png" alt="no Image">
+        </div>
+        <div class="div_menu">
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="Jeweiry_shop.html">Jeweiry Shop</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Local Artwork</a></li>
+                <li><a href="">Contact Us</a></li>
+              </ul>
+        </div>
+        <div class="div_social">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+
+        </div>
+    </header>
+    <main class="cont_checkout">
+        <section class="title_checkout">
+            <h2>Checkout</h2>
+        </section>
+        <section class="coupon">
+            <div class="click_coupon">
+                <p>Have a coupon? <a href="#" onclick="myFunction()">Click here to enter your code</a></p>
+            </div>
+            <div class="enter_code" id="enter_code">
+                <input type="text" class="c_code" name="c_code" placeholder="Coupon code">
+                <input type="submit" class="btn_apply_code" name="apply_coupon" value="Apply coupon">
+            </div>
+        </section>
+        <section class="Billing_details">
+            <h3>Billing details</h3>
+            <div class="input_name">
+                <div class="f_name">
+                    <label for="f_name">FIrst name *</label><br>
+                    <input type="text" class="f_name" name="f_name" placeholder="">
+                </div>
+                <div class="l_name">
+                    <label for="l_name">Last name *</label><br>
+                    <input type="text" class="l_name" name="l_name" placeholder="">
+                </div>
+            </div>
+            <div>
+                <label for="country_region">Country / Region *</label>
+                <p>United States (US)</p>
+            </div>
+            <div class="address"> 
+                <label for="address ">Street address *</label> <br>
+                <input type="text" class="street" name="street" placeholder="House number and street name">
+
+                <label for="city ">Town / City *</label> <br>
+                <input type="text" class="City" name="City" placeholder="">
+
+                <label for="State ">State *</label> <br>
+                <select class="select_State" id="State" name="State">
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                </select>
+                <br>
+
+                <label for="zip ">Zip *</label> <br>
+                <input type="text" class="zip" name="zip" placeholder="">
+
+                <label for="phone ">Phone *</label> <br>
+                <input type="text" class="phone" name="phone" placeholder="">
+
+                <label for="email ">Email *</label> <br>
+                <input type="text" class="email" name="email" placeholder="">
+            </div>
+        </section>
+        <section class="different_address">
+            <div class="other_add"> 
+                <h3>Ship to a different <br> address? </h3>
+                <input onclick="func_show_otheradd()" type="checkbox" checked="checked" name="radio"> 
+            </div>
+            <div id="other_address">
+                <div class="input_name">
+                    <div class="f_name">
+                        <label for="f_name">FIrst name *</label><br>
+                        <input type="text" class="f_name" name="f_name1" placeholder="">
+                    </div>
+                    <div class="l_name">
+                        <label for="l_name">Last name *</label><br>
+                        <input type="text" class="l_name" name="l_name1" placeholder="">
+                    </div>
+                </div>
+                <div>
+                    <label for="country_region">Country / Region *</label>  
+                    <p>United States (US)</p>
+                </div>
+                <div class="address"> 
+                    <label for="address ">Street address *</label> <br>
+                    <input type="text" class="street" name="street1" placeholder="House number and street name">
+                    <br>
+    
+                    <label for="city ">Town / City *</label> <br>
+                    <br>
+                    <input type="text" class="City" name="City1" placeholder="">
+                    <br>
+    
+                    <label for="State ">State *</label> <br>
+                    <select class="select_State" id="State" name="State1">
+                        <option value="AL">Alabama</option>
+                        <option value="AK">Alaska</option>
+                        <option value="AZ">Arizona</option>
+                        <option value="AR">Arkansas</option>
+                        <option value="CA">California</option>
+                        <option value="CO">Colorado</option>
+                    </select>
+                    <br>
+    
+                    <label for="zip ">Zip *</label>
+                    <br>
+                    <input type="text" class="zip" name="zip1" placeholder="">
+                    <br>
+                </div> 
+            </div>   
+            <div>
+                <label for="Order_notes ">Order notes (optional) *</label>
+                <br>
+                <textarea name="Order_notes1" id="" cols="49" rows="10" placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
+            </div>
+        </section>
+        <section class="Your_order">
+            <h3>Your order</h3>
+            <div>
+                <div class="Pro_title">
+                    <p><strong>Product</strong></p>
+                    <p>Coral Drop Earring <strong>x 1</strong></p>
+                    <p>Steer Skull Conchito Earrings <strong>× 1</strong></p>
+                    <p><strong>Subtotal</strong></p>
+                    <p><strong>Shipping</strong></p>
+                    <p><strong>Tax</strong></p>
+                    <p><strong>Total</strong></p>
+                </div>
+                <div class="pro_price">
+                    <p><strong>Subtotal</strong></p>
+                    <p><strong>$38.00</strong></p>
+                    <p><strong>$28.00</strong></p>
+                    <p><strong>$66.00</strong></p>
+                    <p><strong>Free shipping</strong></p>
+                    <p><strong>$6.06</strong></p>
+                    <p><strong>$72.06</strong></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("enter_code");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+        }
+        function func_show_otheradd() {
+          var x = document.getElementById("other_address");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+        }
+    </script>
+</body>
+</html>
